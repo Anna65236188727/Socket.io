@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChatLive</title>
+</head>
+<body>
+    <div class="join-screen">
+        <h1 class=" ">Платформа для связи с друзьями</h1>
+        <br>
+        <input id="username" type="text" required placeholder="Ваше Имя...">
+        <button id="join-chat-btn">Начать сейчас</button>
+    </div>
+    <div class="container blur-element">
+        <div class="header">
+            <div class="logo">
+                <img src="\images\logo.png" alt="logo">
+                <div class="logoname">ChatLive</div>
+            </div>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О разработке</a></li>
+                <li><a id="logout">Вход/Регистрация</a></li>
+            </ul>
+        </div>
+        <div class="chat-box"></div>
+        <div class="chat_input-box">
+            <button id="attachments-btn" class="chat-btn aligncenter">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-paperclip" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 7l-6.5 6.5a1.5 1.5 0 0 0 3 3l6.5 -6.5a3 3 0 0 0 -6 -6l-6.5 6.5a4.5 4.5 0 0 0 9 9l6.5 -6.5"></path>
+                 </svg>
+            </button>
+            <textarea id="message-input" placeholder="Напишите сообщение..."></textarea>
+            <div id="smile-btn" class="chat-btn aligncenter">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M9 10l.01 0"></path>
+                    <path d="M15 10l.01 0"></path>
+                    <path d="M9.5 15a3.5 3.5 0 0 0 5 0"></path>
+                 </svg>
+            </div>
+            <button id="send-btn" class="chat-btn aligncenter">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
+                 </svg>
+            </button>
+            <!-- <div class="smiles">
+                <div class = 'smile' my-data-smile = '&#128512;'>&#128512;</div>
+                <div class = 'smile' my-data-smile = '&#128517;'>&#128517;</div>
+                <div class = 'smile' my-data-smile = '&#128554;'>&#128554;</div>
+                <div class = 'smile' my-data-smile = '&#129397;'>&#129397;</div>
+                <div class = 'smile' my-data-smile = '&#129315;'>&#129315;</div>
+                <div class = 'smile' my-data-smile = '&#128579;'>&#128579;</div>
+                <div class = 'smile' my-data-smile = '&#129313;'>&#129313;</div>
+            </div> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
