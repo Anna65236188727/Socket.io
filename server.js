@@ -6,7 +6,7 @@ const server = require("http").createServer(app);
 
 const io = require("socket.io")(server);
 
-const port = 5000;
+const port = 7000;
 
 app.use(express.static(path.join(__dirname + "/public")));
 

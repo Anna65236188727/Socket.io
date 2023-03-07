@@ -89,6 +89,9 @@ a {
     margin-left: 4em;
 }
 /* Основное окно с сообщениями */
+
+
+
 .chat-box {
     display: flex;
     flex-direction: column;
@@ -180,9 +183,6 @@ a {
     overflow: hidden;
 }
 
-/* Раскрытие меню смайлов */
-/* Лучше наверно сделать через js */
-.chat_input-box #smile-btn:active {}
 
 /* Окно для автоизации */
 .join-screen {
@@ -230,6 +230,32 @@ a {
     background: #000000;;
 }
 
+.smiley-dropdown-content {
+    position: absolute;
+    top: 82%;
+    right: 2%;
+    z-index: 20;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    padding: 12px;
+    border-radius: 4px;
+}
+.show {
+    display: block;
+}
+.smiley-dropdown-content .smiley {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.smiley-dropdown-content .smiley:hover {
+    opacity: 0.8;
+}
+.smiley-dropdown.show .smiley-dropdown-content {
+    display: block;
+}
 
 @media screen and (max-width: 800px) {
     .header ul {
